@@ -1,0 +1,15 @@
+name: Hola Mundo
+
+on:
+  push:
+    branches: 
+      - main
+
+
+jobs:
+  hola_mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir Mensaje
+        run: |
+          echo "Hola VAS"
