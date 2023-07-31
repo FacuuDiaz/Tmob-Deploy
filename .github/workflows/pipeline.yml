@@ -11,7 +11,10 @@ jobs:
 
       # Upload files
       # ...
-
+      - name: Download files
+        run: |
+          git pull origin main
+          
       - name: Reload webapp
         uses: jensvog/pythonanywhere-webapp-reload-action@v1
         with:
